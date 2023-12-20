@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+}
+
+@layer base {
+    :root {
+        --tomato-gradient-color: linear-gradient(
+            128deg,
+            rgba(255, 84, 115, 1) 15%,
+            rgba(254, 91, 99, 1) 39%,
+            rgba(255, 98, 87, 1) 66%,
+            rgba(255, 98, 86, 1) 67%,
+            rgba(255, 101, 75, 1) 80%,
+            rgba(255, 105, 61, 1) 89%
+          );
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        @apply bg-CharcoalGray;
+    }
+}
+
+@layer components {
+    .footerCus {
+        text-shadow: 0px 0px 3px white;
+        @apply py-5;
+    }
+}
+
+@layer utilities {
+    .hidden {
+        display: none !important;
+    }
+}

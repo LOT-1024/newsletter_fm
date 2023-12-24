@@ -77,10 +77,10 @@ const FormCard = ({ handleChange, handleSubmit, email }) => {
                     </ul>
                     <fieldset className="mt-8">
                         <label className="flex justify-between text-xs font-bold">
-                            <p className="text-DarkSlateGray">Email address</p>
-                            <p className={`text-Tomato ${!dataForm.error && `hidden`}`}>
+                            <span className="text-DarkSlateGray">Email address</span>
+                            <span className={`text-Tomato ${!dataForm.error && `hidden`}`}>
                                 Valid email required
-                            </p>
+                            </span>
                         </label>
                         <input
                             onChange={handleChangeInput}
